@@ -1,0 +1,11 @@
+services:
+  db:
+    image: postgres:15
+    container_name: postgres-encomiendas
+    environment:
+      POSTGRES_DB: encomiendasdb
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - "5433:5432"
+
